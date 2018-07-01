@@ -1,10 +1,14 @@
 1.	Difference between string and stringbuilder
 string instance is immutable
 System.Text.StringBuilder is mutable
-That means, using the StringBuilder class can boost performance when concatenating many strings together in a loop
+That means, using the StringBuilder class can boost performance when concatenating
+many strings together in a loop
 
 2.	Difference between overload and override
-Overloading occurs when two or more methods in one class have the same method name but different parameters. Overriding means having two methods with the same method name and parameters (i.e., method signature). One of the methods is in the parent class and the other is in the child class.
+Overloading occurs when two or more methods in one class have the same method
+name but different parameters. Overriding means having two methods with the same
+method name and parameters (i.e., method signature). One of the methods is in
+the parent class and the other is in the child class.
 
 4.	How do you structure a webforms application code
 <Form >
@@ -14,10 +18,16 @@ Overloading occurs when two or more methods in one class have the same method na
 5.	Describe a difficult problem that you solved using asp.net
 
 6.	What should you do in the catch portion of a try/catch block
-A try / catch statement can contain several catch blocks, to handle different exceptions in different ways. Each catch block must take a parameter of a different throwable class. A thrown object may match several catch block but only the first catch block that matches the object will be executed.
+A try / catch statement can contain several catch blocks, to handle different
+exceptions in different ways. Each catch block must take a parameter of a different
+throwable class. A thrown object may match several catch block but only the first
+catch block that matches the object will be executed.
 
 7.	You have a return statement in the try, will finally be executed
-Because a finally block will always be called unless you call System.exit() (or the thread crashes). If the JVM exits while the try or catch code is being executed, then the finally block may not execute. ... if there is any return statement in the block(s),finally will be executed prior to that return statement
+Because a finally block will always be called unless you call System.exit()
+(or the thread crashes). If the JVM exits while the try or catch code is being
+executed, then the finally block may not execute. ... if there is any return
+statement in the block(s),finally will be executed prior to that return statement
 
 8.	How can you create a job scheduler in a webforms web application
 Create a webservice method such as DoSuchAndSuchProcess
@@ -25,7 +35,8 @@ Create a console app that calls this webmethod.
 Schedule the console app in the task scheduler.
 
 9.	Difference between an arraylist and a generic list.
-ArrayList is a non-generic collection class and resides in System.Collection namespace whereas List is a generic class and resides in System.Collections.Generic namespace
+ArrayList is a non-generic collection class and resides in System.Collection
+namespace whereas List is a generic class and resides in System.Collections.Generic namespace
 
 ArrayList marks = new ArrayList();
 marks.Add(50);
@@ -39,7 +50,9 @@ marks.Add(60);
 
 10.	Why did you choose to develop in asp.net
 
-11.	When using user controls, how do you limit database calls for the same information if multiple user controls are displaying similar data
+11.	When using user controls, how do you limit database calls for the same information
+if multiple user controls are displaying similar data
+
 cache
 public DataTable GetCustomers(bool BypassCache)
 {
@@ -56,9 +69,14 @@ public DataTable GetCustomers(bool BypassCache)
 }
 
 12.	Is C# managed or unmanaged? What does that mean?
-Managed code is not compiled to machine code but to an intermediate language which is interpreted and executed by some service on a machine and is therefore operating within a (hopefully!) secure framework which handles dangerous things like memory and threads for you. In modern usage this frequently means .NET but does not have to.
+Managed code is not compiled to machine code but to an intermediate language which is
+interpreted and executed by some service on a machine and is therefore operating within a (hopefully!)
+secure framework which handles dangerous things like memory and threads for you.
+In modern usage this frequently means .NET but does not have to.
 
-Unmanaged code is compiled to machine code and therefore executed by the OS directly. It therefore has the ability to do damaging/powerful things Managed code does not. This is how everything used to work, so typically it's associated with old stuff like .dlls
+Unmanaged code is compiled to machine code and therefore executed by the OS directly.
+It therefore has the ability to do damaging/powerful things Managed code does not.
+This is how everything used to work, so typically it's associated with old stuff like .dlls
 
 13.	Can you use Web API in webforms? How?
 Ajax calls to Web API
@@ -96,10 +114,12 @@ public class VTRoutingController : ApiController
     }
 }
 
-17.	How do you prevent a reference type variable from changing its value when the source object changes. For example, object1=object2, now object1 property changes but we don’t want object2 to change.
+17.	How do you prevent a reference type variable from changing its value when the source object changes.
+For example, object1=object2, now object1 property changes but we don’t want object2 to change.
 
 18.	What is the virtual keyword used for?
-The virtual keyword is used to modify a method, property, indexer, or event declared in the base class and allow it to be overridden in the derived class.
+The virtual keyword is used to modify a method, property, indexer, or event declared in the base class
+and allow it to be overridden in the derived class.
 
 19.	How can you mix code-behind with front end code in an aspx page?
 The field must be declared public

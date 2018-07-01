@@ -1,10 +1,13 @@
 1.	Difference between inner join and outer join
 
-Inner join - An inner join using either of the equivalent queries gives the intersection of the two tables, i.e. the two rows they have in common.
+Inner join - An inner join using either of the equivalent queries gives the intersection of the
+two tables, i.e. the two rows they have in common.
 
 Left outer join - A left outer join will give all rows in A, plus any common rows in B.
 
-Full outer join - A full outer join will give you the union of A and B, i.e. All the rows in A and all the rows in B. If something in A doesn't have a corresponding datum in B, then the B portion is null, and vice versa
+Full outer join - A full outer join will give you the union of A and B, i.e. All the rows in A and
+all the rows in B. If something in A doesn't have a corresponding datum in B, then the B portion is null,
+and vice versa
 
 2.	How many records do you get if you cross apply left table with 5 rows and right table with 0 rows
 CROSS APPLY returns only those rows in the outer table for which the table value function returns data
@@ -21,9 +24,12 @@ right-clicking on your new database (or create one), and selected Import/Export 
 SQL Server called SSIS, which is a competent ETL (extract, transform, load) tool
 
 5.	Difference between truncate and delete
-When you TRUNCATE a table less information is logged.  This means the TRUNCATE statement executes very fast; however, it does so at the expense of not logging each row deleted
+When you TRUNCATE a table less information is logged.  This means the TRUNCATE
+statement executes very fast; however, it does so at the expense of not logging each row deleted
 
-The DELETE command is used to remove records from a database.  It is the most common way to do so.  In its simplest form you can remove all the rows from a database or you can add a WHERE clause to remove only those meeting the criteria.
+The DELETE command is used to remove records from a database.  It is the most common way to do so.
+In its simplest form you can remove all the rows from a database or you can add a
+WHERE clause to remove only those meeting the criteria.
 
 
 6.	How do you trim a string?
@@ -33,7 +39,8 @@ SET Name = RTRIM(LTRIM(Name))
 
 7.	When should you use a cursor
 Cursors are sometimes faster for calculating something like a running total.
-Cursors are also handy for multiple executions of a stored proc that is set up to handle only one input value at a time.
+Cursors are also handy for multiple executions of a stored proc that is set up
+to handle only one input value at a time.
 Normally they are to be avoided replaced with set.
 
 
@@ -50,11 +57,14 @@ Execute sp_Executesql     @SQLQuery,
 
 
 9.	How do you set up a many-many relationship
-There’s a many-to-many relationship between the students and their classes, since each student can take multiple classes, and each class can have multiple students enrolled.
+There’s a many-to-many relationship between the students and their classes,
+since each student can take multiple classes, and each class can have multiple students enrolled.
 Defining foreign keys in separate table to link the 2 tables
 
 
-10.	How can you add a new column to an existing table, and make the statement re-runnable without getting an error
+10.	How can you add a new column to an existing table, and make the statement
+re-runnable without getting an error
+
 if exists
 
 11.	How to get the second lowest priced item from the product table
@@ -65,9 +75,12 @@ select price from table where price in (
 )
 
 12.	How do you store image files
-if your pictures or document are typically below 256K in size, storing them in a database VARBINARY column is more efficient
+if your pictures or document are typically below 256K in size, storing them in a
+database VARBINARY column is more efficient
 
-if your pictures or document are typically over 1 MB in size, storing them in the filesystem is more efficient (and with SQL Server 2008's FILESTREAM attribute, they're still under transactional control and part of the database)
+if your pictures or document are typically over 1 MB in size, storing them in the
+filesystem is more efficient (and with SQL Server 2008's FILESTREAM attribute, they're
+still under transactional control and part of the database)
 
 13.	How do you normalize a database
 First Normal Form: Eliminating Repeating Groups
