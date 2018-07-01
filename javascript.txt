@@ -1,0 +1,66 @@
+1.	How can you mix javascript code and asp.net code in a javascript method?
+
+<%@ Page Language="C#" %>
+<script runat="server">
+    void Page_Load(object sender, EventArgs e) {
+       Page.RegisterClientScriptBlock("MyScript",
+           "<script language=javascript>" +
+           "if (document.images) {" +
+           "MyButton = new Image;" +
+           "MyButtonShaded = new Image;" +
+           "MyButton.src = 'button1.jpg';" +
+           "MyButtonShaded.src = 'button2.jpg';" +
+           "}" +
+           "else {" +
+           "MyButton = '';" +
+           "MyButtonShaded = '';" +
+           "}" +
+           "</script>");
+
+       ImageButton1.Attributes.Add("onmouseover",
+          "this.src = MyButtonShaded.src;" +
+          "window.status='Oh Yes! Click here!';");
+       ImageButton1.Attributes.Add("onmouseout",
+          "this.src = MyButton.src;" +
+          "window.status='';");
+    }
+
+    void ImageButton1_Click(object sender, ImageClickEventArgs e) {
+       Label1.Text = "Postback!";
+    }
+</script>
+
+
+2.	What is the purpose of the === (triple equals) in javascript?
+Strict equality compares two values for equality. Neither value is implicitly converted to some other value before being compared. If the values have different types, the values are considered unequal. Otherwise, if the values have the same type and are not numbers, they're considered equal if they have the same value. Finally, if both values are numbers, they're considered equal if they're both not NaN and are the same value, or if one is +0 and one is -0.
+
+3.	Difference between innerHtml and outerHtml?
+innerHTML = HTML inside the selected element.
+
+outerHTML = HTML inside the selected element + HTML of the selected
+
+
+4.	How do you add new items and remove items from a javascript array
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+
+5.	How do you debug javascript?
+browser debugging tools - web console, eslint, webpack
+react developer tool, fiddler
+
+6.	How do you implement a callback function?
+function implCallback (options, callback) {
+    //logic
+    callback (options);
+}
+function myCallback(options){
+  //do something
+}
+var options ={...options}
+implCallback(options, myCallback)
+
+
+7.	What will be the result of 2+7+”1”
+
+91
+
+-------------------------------------------

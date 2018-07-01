@@ -1,0 +1,14 @@
+1.	Describe different payment transaction types
+2.	Describe different payment methods and what’s involved in implementing them
+3.	Difference between payment gateway and payment processor
+4.	How would you implement a site search? How would you include content pages and products in the search results
+5.	Which wysiwyg editors are you familiar with?
+6.	What is bootstrap
+7.	What is Google Analytics, how do you implement it?
+8.	How do you optimize images on a website
+9.	How do you calculate taxes on an ecommerce order?
+10.	Give some examples of product variants
+11.	How do you do regression testing
+12.	Name some common KPIs in ecommerce and how that drives what data you should store
+What’s the most recent thing you learned about?
+What types of technologies do you want to work on?
